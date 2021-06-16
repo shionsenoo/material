@@ -46,14 +46,20 @@
 
 .user-nickname {
   text-decoration: none;
-  margin-right: 3vw;
+  line-height: 32px;
   color: white;
-  font-weight: bold;
+  border-right: 1px dotted white;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .logout {
   text-decoration: none;
+  line-height: 32px;
   color: white;
+  border-right: 1px dotted white;
+  padding: 0 15px;
+  text-align: center;
 }
 
 .login {
