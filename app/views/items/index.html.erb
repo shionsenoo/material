@@ -1,25 +1,24 @@
 <div class='main'>
   <div class='start-order'> 
-    <span class='start-order-header'>注文する</span>
-    <span class='start-order-text'>材料を確認するために注文を開始する</span>
+    <span class='start-order-header'>購入/出品する</span>
+    <span class='start-order-text'>購入は左のボタンを出品は右のボタンを押してください</span>
     <div class='order-button'>
-      <div class='wood-button'>
-        <span>木材</span>
-        <%= image_tag "house1.png", class:"house-icon" %>
-      </div>
       <div class='adhesive-button'>
-        <span>接着剤</span>
+        <span>購入する</span>
         <%= image_tag "house1.png", class:"house-icon" %>
       </div>
-      <div class='wall-button'>
-        <span>壁材</span>
+      <%= link_to(new_item_path, class: 'wall-button') do %>
+        <span>出品する</span>
         <%= image_tag "house1.png", class:"house-icon" %>
-      </div>
+      <% end %>
     </div>
   </div>
   <div class="slide" id="makeImg">
     <%= image_tag "wood.jpg", class:"wood" %>
+    <p></p>
     <%= image_tag "type.jpg", class:"wood" %>
+    <p></p>
     <%= image_tag "wooden.jpg", class:"wood" %>
+    <p></p>
   </div>
 </div>
